@@ -1,9 +1,12 @@
+import resources.media as media
+
 class Bullet:
-    def __init__(self, x, y, y_change, state):
+    def __init__(self, x, y, y_change, state, image):
         self._x = x
         self._y = y
         self._y_change = y_change
         self._state = state
+        self._image = image
 
     # Getter y setter para la propiedad x
     @property
@@ -40,3 +43,13 @@ class Bullet:
     @state.setter
     def state(self, value):
         self._state = value
+        
+    # Función para disparar la bala
+    def fire_bullet(self, x, y):
+        self.state = "fire"
+        media.screen.blit(self._image, (x + 16, y + 10))
+        return self.state
+    
+    def reset_position(self, y):
+        self.y = y
+        self.state = "ready"
