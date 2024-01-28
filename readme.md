@@ -23,4 +23,4 @@ Con un estilo visual retro 🎨 y una banda sonora envolvente 🎵, "Space Shoot
 
 ¡Prepárate para despegar en esta emocionante aventura espacial y convertirte en la leyenda de la galaxia en "Space Shooter: La Última Defensa Galáctica"! 🌠🚀👾
 
-<img src="assets/images/Capture.PNG" alt="interfaz de usuario">
+<img src="assets/Capture.PNG" alt="interfaz de usuario">
