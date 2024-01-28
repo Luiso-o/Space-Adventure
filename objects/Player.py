@@ -18,10 +18,10 @@ class Player:
         return self.speed
     
     def move_left(self):
-        self.x -= self.speed
+        self.x = max(self.x - self.speed, 0)
 
     def move_right(self):
-        self.x += self.speed
+        self.x = min(self.x + self.speed, 850 - 60)
 
     def stop_moving(self):
         pass
